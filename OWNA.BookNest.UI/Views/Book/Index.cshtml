@@ -1,0 +1,55 @@
+﻿@model IEnumerable<OWNA.BookNest.Repository.Models.Book>
+@{
+    <h1>All Books</h1>
+
+    <div>
+        <table width="100%">
+            <tr>
+                <td>
+                    <form asp-action="Search" method="get">
+                        <p>
+                            <input type="text" name="searchText" placeholder="Search by title or author"/>
+                            <button type="submit">Search</button>
+                        </p>
+                    </form>
+                </td>
+                <td align="right">
+                    <a asp-action="Create" class="btn btn-primary">Add Books</a>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+    <p></p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Authors</th>
+                <th>Description</th>
+                <th>Cover Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model)
+            {
+                <tr>
+                    <td>@book.Title</td>
+                    <td>
+                        @foreach (var author in book.Authors)
+                        {
+                            <span>@author.Name</span>
+
+                            <br />
+                        }
+                    </td>
+                    <td>@book.Description</td>
+                    <td>
+                        <img src="@book.CoverImageUrl" alt="Cover Image" style="max-width: 100px; max-height: 100px;" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

@@ -1,0 +1,81 @@
+{
+  "Authors": [
+    {
+      "Id": 1,
+      "Name": "F. Scott Fitzgerald"
+    },
+    {
+      "Id": 2,
+      "Name": "Harper Lee"
+    },
+    {
+      "Id": 3,
+      "Name": "George Orwell"
+    },
+    {
+      "Id": 4,
+      "Name": "Riyaz"
+    }
+  ],
+  "Books": [
+    {
+      "Id": 1,
+      "Title": "The Great Gatsby",
+      "SelectedAuthorIds": null,
+      "Description": "The story of the fabulously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan.",
+      "CoverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/The_Great_Gatsby_Cover_1925_Retouched.jpg/220px-The_Great_Gatsby_Cover_1925_Retouched.jpg",
+      "Authors": [
+        {
+          "Id": 1,
+          "Name": "F. Scott Fitzgerald"
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "Title": "To Kill a Mockingbird",
+      "SelectedAuthorIds": null,
+      "Description": "The story of racial injustice and the destruction of innocence in a small Southern town.",
+      "CoverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/To_Kill_a_Mockingbird.JPG/220px-To_Kill_a_Mockingbird.JPG",
+      "Authors": [
+        {
+          "Id": 2,
+          "Name": "Harper Lee"
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "Title": "1984",
+      "SelectedAuthorIds": null,
+      "Description": "A dystopian novel set in a totalitarian society where government surveillance and control is pervasive.",
+      "CoverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/1984first.jpg/220px-1984first.jpg",
+      "Authors": [
+        {
+          "Id": 3,
+          "Name": "George Orwell"
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "Title": "2024",
+      "SelectedAuthorIds": [
+        3,
+        4
+      ],
+      "Description": "New Year 2024",
+      "CoverImageUrl": "2024.jpg",
+      "Authors": [
+        {
+          "Id": 3,
+          "Name": "George Orwell"
+        },
+        {
+          "Id": 4,
+          "Name": "Riyaz"
+        }
+      ]
+    }
+  ]
+}

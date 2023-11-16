@@ -1,0 +1,26 @@
+﻿@model IEnumerable<OWNA.BookNest.Repository.Models.Author>
+@{
+    <h1>Authors List</h1>
+
+    <div class="button-container">
+        <a asp-action="Create" class="btn btn-primary">Add Author</a>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Author ID</th>
+                <th>Author Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var author in Model)
+            {
+                <tr>
+                    <td>@author.Id</td>
+                    <td>@author.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
